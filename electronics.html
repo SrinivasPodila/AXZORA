@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axzora Electronics</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axzora Electronics</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html" class="brand" aria-label="Axzora home">
-                    <span class="brand-glyph"><span class="brand-letter">A</span></span>
-                    <span class="brand-name">Axzora</span>
-                </a>
-            </div>
-            <h1 style="color:#fff; font-family:Inter, sans-serif; font-weight:800;">Electronics</h1>
-        </div>
-    </header>
-
+<header class="header">
+<div class="header-container">
+<div class="logo">
+<a href="index.html" class="brand" aria-label="Axzora home">
+<span class="brand-glyph"><span class="brand-letter">A</span></span>
+<span class="brand-name">Axzora</span>
+</a>
+</div>
+<h1 style="color:#fff; font-family:Inter, sans-serif; font-weight:800;">Electronics</h1>
+</div>
+</header>
+ 
     <main id="main-content" role="main">
-        <section class="products" id="products" aria-labelledby="products-title">
-            <div class="container">
-                <h2 class="section-title" id="products-title">Electronics</h2>
-                <div class="product-grid" id="productGrid" role="list" aria-label="Product items" aria-busy="true"></div>
-                <div id="fallback" style="display:none; text-align:center; margin:24px 0;">
-                    <button id="loadJsonBtn">Load Electronics Data</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
+<section class="products" id="products" aria-labelledby="products-title">
+<div class="container">
+<h2 class="section-title" id="products-title">Electronics</h2>
+<div class="product-grid" id="productGrid" role="list" aria-label="Product items" aria-busy="true"></div>
+<div id="fallback" style="display:none; text-align:center; margin:24px 0;">
+<button id="loadJsonBtn">Load Electronics Data</button>
+</div>
+</div>
+</section>
+</main>
+ 
     <script>
     // Sample electronics data (replace with your actual data)
     const inlineElectronicsData = [
-       {
+          {
   "Product Name" : "DREAME Robot Vacuum Cleaner",
   "Product URL" : "https://aax-eu-zaz.amazon.in/x/c/JA30gwuQYOorOg4X9NWI4FAAAAGYp4nwzAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDEgICC_3MCO/clv1_CEuOPUxokZA0iHrVdukW7wmNan8lU6FrmJcJrWW79exI4X9AnTiMH_018HHz9hvVjq0yzpNb3X7OfU1vAmcAK0ZYGwrMPMWtElpTSkF_EwKQHolBlEfB8IkGXCRtU-W6XJeXalC7rdIQEQQ8kV_3ZVhXLA8QC8x8H15tWbp4Xgyay_2WjkwrSxutOI2vKbYuDzUcfMyagcpNBHhtJZhsefQQh8yliMIIKin6O61_zAYOsoJhkeWuV2gvjBmW5lJBN2PMN-SRnR9AjX0lL9xFahCwdXiTzSjwM7idy5i2a5sQYmWf1aK1xkuNcA7FBIOT3_cq0eVrbNPflqH2PMWOJOAu7OR9BDACivQj9dRsNbZy2mZ9Aned1SWr3JYqfnqDdhxLjmOcuEw9tBLIB-qsZlpKf6rdhPBne-wSBml9tlZkUux_rAVrRF9I0bxcInIFH-Gzc_r6mO-bWyVNaReipMUTeUmOnmCYQTtgTbV7n9mGD0dk7s2izRPtS0xNFricmfda3FxGEYwynzuAoU-5yQODWwRmcmo6djaNSR6rH7DofgKiPz1B7kQPBXjrdEHsefg0kPl-VBmGjLx6pM0NATfcADpCyR1V8u8umKazrWoovLyO4a4ZPXHk5F3eTZyUFmEaTc0_BDZj7M15O8tu4RAJ27f_ZzBDaWok4tYk48M7NmkOZ36Fl1Ebkg_eWdRJ6F4F1mJu4PcI-cklAyyUSHtG2abkbt7g3rrlfXRVPD7-2TbfYsZB0gNE2NoHS_--qKhNGCPDjknV7BO4C3zvJRNiqTjUCExQsMBHVOQLRAqN-FMsB_58jgRzoruOTVDEa-acQxJH6Q_wpt5iWsFHk5u_oxsdis-ISca6mMCyhW_h5VyT93A06hPLh2C-4wmgiP8WusIimBHMAMslSNgRCtui7OOboCN1FA0NCFbikgXDjRVaEmwUOWV0UTnI8Vb_xRuyRPnV17HqrOrc_TWcXptNDtjiQ4jg2H2gfA1hOcAwRR9AF0hTZZjO_yDsJXZHHTqL241V-AwTZ50R6r2Q8yA6tT9KV-eqh1dxz6x-hQt7CGWCcpKNGQr1T5JXM_NVRmOEVa7PIWkpCraXc4WyxbHEaQ3AxKJAUNcuLS59GJuTUVOhLvdMtVZRIKW9tsvtntYqZtb-kGg5AudkvlshYnB-eMnpHUr2MJEFt7f8pInC6ReP8HLHtucYvDhBbsMSM32NK3H86zm4WyxY-1b8EtqGzexBvqR1p2Ka775RG1XzFGYHeG-FoVKlhC0EfZXHQp4tleuvaFfkTa5MYJA2q242-LRgjoni0Qqik3W3BMDicdExd93o-4t4kmOe948_NbMNUhGs7UHQj9MUR0oV2bDgzdkD-HRqecFcAehPgdtAhWm5PA-8k-i8Ln-VYZNPDB7iZXHwcSDQeBAZZJWKRaLLiUG1NmRalKs5-OzLkk1jMj9S0KgSE7wMEjDiNiaO7i8wEnigt4agmQudMCPRTkfH1DSIZOkx8LAUnN0g1FI4hGvhBUGFHkV_0JYxid-srHr7dhdNeJhSPbDebNsNOib0ofbWJ2OEP36_DYYGgpy28cbKx7yDZrxdOI4grv9AbezNB0js8r7cEfjPABo9XD9AzOHT04ot5Mb-wnDD9oaGb1yzEwCIkhFNn3N5RrW4XCrxLVvb85Y3CViOsjl4548cSgrIdkEJAKx8msk8ZdqMd_klq4TNQywp88GGss7miaBHTZe_gCt_oluqj4gcAQns-Rtbsxe2jdlvDxzKzGON2s3w5PA-UJoMz1TiR9d4l9Uo81a5qqVecP5xW4FO4ncpO8jX72GKV9efHyr8l8-lN72r6JMP46RcXPy3rshIv1oEWesZCJIf-vPnGyfODo2NoqhJc8CeHd9cWyVvtRh_lez0F6-7uFUld5Gg1tEJrNneUhRclsuN_TwTdlDLT9DlpnZ_5NEocuX1sqdqjnBqZBtT9OGD_AqGU27gyLjmV28jZAvvlzcNJmmsHVpP09gk9gAuOx3FS6d7e12UQbalZ3tcKID6GZPCwAb4smo7WI49WBVDRZcIqhZjiOTOrs7wiJwhccq1WvspZpZnGqEAjtpGIV4OObdxwW8jFdaa5DQdaEZgCo2icC6kPwvFP3I0D57h__3nHOR79nATCuejReF8Sj7QcZwMvbRtn1ulW-Ne8-5HXgVPRxiJNS3S_iSgELziiBtrzoi0bOo5H19puv0bRZSlFmElXA3DVg/https://www.amazon.in/gp/aw/d/B0FDKZTRL1/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=a3c0c83cdce4788577225f76a61b9161&hsa_cr_id=0&qid=1755157491&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=Cy6OB&content-id=amzn1.sym.cbe1d71a-30e3-45dc-b787-bad221b13c68%3Aamzn1.sym.cbe1d71a-30e3-45dc-b787-bad221b13c68&pf_rd_p=cbe1d71a-30e3-45dc-b787-bad221b13c68&pf_rd_r=40NYAXD61EXF5SH7B16F&pd_rd_wg=Ojk1g&pd_rd_r=92578515-0870-4b7a-aaf3-d42e7a8b3b08",
   "Product Image" : "https://m.media-amazon.com/images/I/61q2w9vvaFL._AC_SR160,134_CB1169409_QL70_.jpg",
@@ -657,31 +657,48 @@
   "Rating (Max 5)" : "4.0",
   "Number of Ratings" : "1457"
 } 
-    ];
-
+ 
+ 
+ 
+];
+ 
     function createCard(item) {
-        const price = item['Selling Price (INR)'] || '';
+        const price = item['Price (INR)'] || '';
         const mrp = item['Original Price (INR)'] || '';
-        const rating = item['Customer Rating (Max 5)'] || '';
+        const rating = item['Rating (Max 5)'] || '';
         const url = item['Product URL'] || '#';
+        const discount = item['Discount Percentage'] || '';
+        // Format price with commas for Indian rupees
+        const formatPrice = (price) => {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        };
         return `
-        <article class="product-card" role="listitem">
-            <a href="${url}" target="_blank" rel="noopener">
-                <img src="${item['Product Image']}" alt="${item['Product Name']}" class="product-image" onerror="this.src='https://via.placeholder.com/320x200?text=Image'" loading="lazy">
-            </a>
-            <div class="product-info">
-                <h3 class="product-name">${item['Product Name']}</h3>
-                <div class="product-price-row">
-                    ${price ? `<span class="product-price">₹${price}</span>` : ''}
-                    ${mrp ? `<span class="product-original-price">₹${mrp}</span>` : ''}
-                </div>
-                ${rating ? `<div class="product-rating"><i class='fas fa-star'></i><span>${rating}</span></div>` : ''}
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </article>`;
+<article class="product-card" role="listitem">
+<a href="${url}" target="_blank" rel="noopener">
+<img src="${item['Product Image']}" alt="${item['Product Name']}" class="product-image" onerror="this.src='https://via.placeholder.com/320x200?text=Image'" loading="lazy">
+</a>
+<div class="product-info">
+<h3 class="product-name">${item['Product Name']}</h3>
+<div class="product-price-row">
+                    ${price ? `<span class="product-price">₹${formatPrice(price)}</span>` : ''}
+                    ${mrp ? `<span class="product-original-price">₹${formatPrice(mrp)}</span>` : ''}
+                    ${discount ? `<span class="product-discount">${discount}% off</span>` : ''}
+</div>
+                ${rating ? `
+<div class="product-rating">
+<div class="stars">
+                        ${'<i class="fas fa-star"></i>'.repeat(Math.floor(rating))}
+                        ${rating % 1 >= 0.5 ? '<i class="fas fa-star-half-alt"></i>' : ''}
+                        ${'<i class="far fa-star"></i>'.repeat(5 - Math.ceil(rating))}
+</div>
+<span>${rating}</span>
+</div>` : ''}
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</article>`;
     }
-
-    // Load electronics data (same logic as fashion.html)
+ 
+    // Load electronics data
     async function loadElectronics() {
         const grid = document.getElementById('productGrid');
         try {
@@ -689,12 +706,99 @@
             const data = await res.json();
             grid.innerHTML = data.map(createCard).join('');
         } catch (e) {
+            console.log("Using inline data as fallback");
             grid.innerHTML = inlineElectronicsData.map(createCard).join('');
         }
         grid.setAttribute('aria-busy', 'false');
     }
-
-    loadElectronics();
-    </script>
+ 
+    // Initialize the page
+    document.addEventListener('DOMContentLoaded', () => {
+        loadElectronics();
+        // Fallback button handler
+        document.getElementById('loadJsonBtn')?.addEventListener('click', loadElectronics);
+    });
+</script>
+ 
+    <style>
+    /* Basic styling - you can expand this in your styles.css */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .product-card {
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background: #f5f5f5;
+    }
+    .product-info {
+        padding: 15px;
+    }
+    .product-name {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        height: 40px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .product-price-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+    .product-price {
+        font-weight: bold;
+        font-size: 18px;
+        color: #B12704;
+    }
+    .product-original-price {
+        text-decoration: line-through;
+        color: #565959;
+        font-size: 14px;
+    }
+    .product-discount {
+        color: #067D62;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .product-rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .product-rating .stars {
+        color: #FFA41C;
+    }
+    .add-to-cart {
+        width: 100%;
+        padding: 8px;
+        background: #FFD814;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .add-to-cart:hover {
+        background: #F7CA00;
+    }
+</style>
 </body>
 </html>
+ 
