@@ -1010,6 +1010,12 @@ body {
 }
 
 /* Products Section */
+.products-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+
 .products {
     padding: 92px 0;
     background: linear-gradient(135deg, #f1f3f6 0%, #e2e8f0 100%);
@@ -1080,11 +1086,92 @@ body {
     display: block;
 }
 
-.product-info {
-    padding: 12px 14px 14px;
+.product.nav-menu li {
+    list-style: none;
+}
+
+/* Dropdown Navigation Styles */
+.nav-item-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    margin-top: -5px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid #e0e0e0;
+}
+
+.nav-item-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-link {
+display: block;
+padding: 12px 20px;
+color: #333;
+text-decoration: none;
+font-weight: 500;
+transition: all 0.2s ease;
+}
+
+.dropdown-menu .dropdown-link:hover,
+.dropdown-menu .dropdown-link:focus {
+background-color: #f3f4f6;
+color: #1f2937;
+}
+
+.nav-link {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+padding: 15px 20px;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+transition: all 0.3s ease;
+border-radius: 8px;
 }
 
 .product-name {
