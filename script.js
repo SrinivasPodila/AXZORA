@@ -1,25 +1,40 @@
-// Default products (used if products.json is unavailable)
+// Enhanced product data with more comprehensive e-commerce features
 let productsData = [
     {
-        "Product Name": "Best Truewireless Headphones",
+        "Product Name": "OnePlus Nord Buds CE True Wireless Earbuds",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=90",
-        "Product Price (INR)": "5000",
+        "Product Price (INR)": "2299",
+        "Original Price (INR)": "2999",
         "Product Category": "Electronics",
-        "Product Offer/Discount": "Grab Now"
+        "Product Offer/Discount": "23% Off",
+        "Rating (Max 5)": "4.2",
+        "Number of Reviews": "1847",
+        "Brand": "OnePlus",
+        "In Stock": true
     },
     {
-        "Product Name": "Monitors",
+        "Product Name": "Samsung 24 inch Full HD LED Monitor",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/xif0q/monitor/b/x/x/-original-imah7rn68zxjzbqx.jpeg?q=90",
-        "Product Price (INR)": "9999",
+        "Product Price (INR)": "8999",
+        "Original Price (INR)": "12999",
         "Product Category": "Electronics",
-        "Product Offer/Discount": "From ₹9999"
+        "Product Offer/Discount": "31% Off",
+        "Rating (Max 5)": "4.3",
+        "Number of Reviews": "2156",
+        "Brand": "Samsung",
+        "In Stock": true
     },
     {
-        "Product Name": "Printers",
+        "Product Name": "Canon PIXMA E477 All-in-One Inkjet Printer",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kwl0akw0/printer/x/q/3/-original-imag989ygsdy6v6x.jpeg?q=90",
-        "Product Price (INR)": "10999",
+        "Product Price (INR)": "4999",
+        "Original Price (INR)": "7500",
         "Product Category": "Electronics",
-        "Product Offer/Discount": "From ₹10999"
+        "Product Offer/Discount": "33% Off",
+        "Rating (Max 5)": "4.1",
+        "Number of Reviews": "892",
+        "Brand": "Canon",
+        "In Stock": true
     },
     {
         "Product Name": "Monitor",
@@ -59,14 +74,14 @@ let productsData = [
     {
         "Product Name": "Geared Cycles",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=90",
-        "Product Price (INR)": "4567",
+        "Product Price (INR)": "600",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 70% Off"
     },
     {
         "Product Name": "Coffee Powder",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=90",
-        "Product Price (INR)": "4455",
+        "Product Price (INR)": "3456",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 80% Off"
     },
@@ -80,35 +95,35 @@ let productsData = [
     {
         "Product Name": "Best of Action Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=90",
-        "Product Price (INR)": "2344",
+        "Product Price (INR)": "234",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 70% Off"
     },
     {
         "Product Name": "Remote Control Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=90",
-        "Product Price (INR)": "9000",
+        "Product Price (INR)": "890",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 80% Off"
     },
     {
         "Product Name": "Soft Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=90",
-        "Product Price (INR)": "5678",
+        "Product Price (INR)": "865",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 70% Off"
     },
     {
         "Product Name": "Dry Fruits",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=90",
-        "Product Price (INR)": "9000",
+        "Product Price (INR)": "987",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Food Spreads",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/klzhq4w0/jam-spread/w/q/u/510-chocolate-peanut-butter-crunchy-510g-jar-nut-butter-original-imagyzpqqfaguxny.jpeg?q=90",
-        "Product Price (INR)": "8000",
+        "Product Price (INR)": "6789",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
@@ -129,28 +144,28 @@ let productsData = [
     {
         "Product Name": "Breakfast Cereal",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/ks6ef0w0/cereal-flake/q/w/h/1-oats-veggies-masala-oats-pouch-yogabar-original-imag5suhzvwy3xh4.jpeg?q=90",
-        "Product Price (INR)": "3456",
+        "Product Price (INR)": "9000",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Tea Powder",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=90",
-        "Product Price (INR)": "3000",
+        "Product Price (INR)": "3456",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Learning & Educational Games",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/krgohow0/learning-toy/1/a/h/mapology-ultimate-indian-combo-india-with-capitals-map-puzzle-original-imag59f2vyh63v9x.jpeg?q=90",
-        "Product Price (INR)": "4000",
+        "Product Price (INR)": "4568",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Up to 80% Off"
     },
     {
         "Product Name": "Honey",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kcjexe80/honey/w/y/4/1-honey-saffola-original-imaftn9ppz2shxzg.jpeg?q=90",
-        "Product Price (INR)": "1500",
+        "Product Price (INR)": "5000",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     }
@@ -348,6 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
 // Setup event listeners
 function setupEventListeners() {
     // Search functionality
@@ -382,6 +398,38 @@ function setupEventListeners() {
             loadFashionData();
         });
     });
+
+    // Fashion dropdown functionality
+    const fashionDropdown = document.querySelector('.nav-item-dropdown');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (fashionDropdown && dropdownToggle && dropdownMenu) {
+        // Handle keyboard navigation
+        dropdownToggle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                fashionDropdown.classList.toggle('dropdown-open');
+            }
+        });
+
+        // Handle click events for dropdown links
+        const dropdownLinks = dropdownMenu.querySelectorAll('.dropdown-link');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                console.log(`Navigating to: ${href}`);
+                // You can add custom navigation logic here if needed
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!fashionDropdown.contains(e.target)) {
+                fashionDropdown.classList.remove('dropdown-open');
+            }
+        });
+    }
 
     // When clicking top nav "Fashion" (link to fashion.html), persist pasted JSON so fashion page can render it
     const fashionTopNavLink = document.querySelector('nav .nav-menu a[href="fashion.html"]');
@@ -440,6 +488,7 @@ function displayProducts(products) {
         button.addEventListener('click', () => addToCart(products[index]));
     });
 }
+
 
 // Load fashion dataset from local JSON file
 async function loadFashionData() {
@@ -600,6 +649,7 @@ function filterByCategory(category, e) {
     }
 }
 
+
 // Add to cart functionality
 function addToCart(product) {
     const existingItem = cart.find(item => item.name === product['Product Name']);
@@ -757,5 +807,4 @@ function getPastedFashionData() {
         }
     } catch (_) {}
     return null;
-
 }
