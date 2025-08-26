@@ -6,7 +6,8 @@
     <meta name="description" content="Axzora is India's most-loved shopping destination for Electronics, Beauty, Food, Sports, Fashion and more.">
     <title>Axzora - Online Shopping Site for Electronics, Beauty, Food & More</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Add this to the head section for loading icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -96,9 +97,9 @@
                         <a href="#" class="menu-item" role="menuitem"><i class="fas fa-credit-card" aria-hidden="true"></i><span>Gift Cards</span></a>
                     </div>
                 </div>
-                <a href="#" class="cart-btn" aria-label="Cart">
-                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                    <span class="cart-count" role="status" aria-live="polite" aria-atomic="true">0</span>
+                <a href="#" class="cart-btn" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
                 </a>
             </div>
         </div>
@@ -108,7 +109,18 @@
     <nav class="nav" aria-label="Primary">
         <div class="nav-container">
             <ul class="nav-menu">
-                <li><a href="fashion.html" class="nav-link"><i class="fas fa-tshirt" aria-hidden="true"></i><span>Fashion</span></a></li>
+                <li class="nav-item-dropdown">
+                    <a href="fashion.html" class="nav-link dropdown-toggle" aria-expanded="false">
+                        <i class="fas fa-tshirt" aria-hidden="true"></i>
+                        <span>Fashion</span>
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fashion-men.html" class="dropdown-link">Men</a></li>
+                        <li><a href="fashion-women.html" class="dropdown-link">Women</a></li>
+                        <li><a href="fashion-kids.html" class="dropdown-link">Kids</a></li>
+                    </ul>
+                </li>
                 <li><a href="electronics.html" class="nav-link"><i class="fas fa-microchip" aria-hidden="true"></i><span>Electronics</span></a></li>
                 <li><a href="groceries.html" class="nav-link"><i class="fas fa-apple-alt" aria-hidden="true"></i><span>Groceries</span></a></li>
                 <li><a href="mobiles.html" class="nav-link"><i class="fas fa-mobile-alt" aria-hidden="true"></i><span>Mobiles</span></a></li>
@@ -121,14 +133,14 @@
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-            <marquee scrollamount="35"><h2 id="hero-title">Welcome to Axzora</h2></marquee>
+           <marquee scrollamount="30"> <h2 id="hero-title"><span coluor="blue">Welcome to Axzora</span></h2></marquee>
             <p>India's Most-loved Shopping Destination</p>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number">100M+</span>
                     <span class="stat-label">Active Users</span>
                 </div>
-                <div class="stat">
+                <div class="stat"> 
                     <span class="stat-number">150M+</span>
                     <span class="stat-label">Products</span>
                 </div>
@@ -170,19 +182,19 @@
     </section>
  
     <!-- Products Section -->
-    <section class="products" id="products" aria-labelledby="products-title">
+    <section id="products" class="products-section">
         <div class="container">
-            <h2 class="section-title" id="products-title">Items</h2>
-            <div class="product-grid" id="productGrid" role="list" aria-label="Product items" aria-busy="true"></div>
+            <h2 id="products-title">Featured Products</h2>
+            <div id="productGrid" class="product-grid" role="list" aria-label="Product listings">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
         </div>
     </section>
    
     <!-- Furniture anchor target -->
     <section id="furniture" class="sr-only" aria-hidden="true">Furniture</section>
     </main>
- 
-   
- 
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -237,7 +249,7 @@
                 </div>
                 <div class="form-row">
                     <label for="suEmail">Email</label>
-                    <input type="email" id="suEmail" name="email" autocomplete="email" required>
+                    <input type="email" id="suEmail" name="email" autocomplete="email" required> 
                 </div>
                 <div class="form-row">
                     <label for="suPhone">Phone</label>
@@ -281,5 +293,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-
  
