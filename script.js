@@ -3,7 +3,7 @@ let productsData = [
     {
         "Product Name": "Best Truewireless Headphones",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "5000",
         "Product Category": "Electronics",
         "Product Offer/Discount": "Grab Now"
     },
@@ -59,14 +59,14 @@ let productsData = [
     {
         "Product Name": "Geared Cycles",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "4567",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 70% Off"
     },
     {
         "Product Name": "Coffee Powder",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "4455",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 80% Off"
     },
@@ -80,35 +80,35 @@ let productsData = [
     {
         "Product Name": "Best of Action Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "2344",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 70% Off"
     },
     {
         "Product Name": "Remote Control Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "9000",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Up to 80% Off"
     },
     {
         "Product Name": "Soft Toys",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "5678",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 70% Off"
     },
     {
         "Product Name": "Dry Fruits",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "9000",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Food Spreads",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/klzhq4w0/jam-spread/w/q/u/510-chocolate-peanut-butter-crunchy-510g-jar-nut-butter-original-imagyzpqqfaguxny.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "8000",
         "Product Category": "Beauty, Food, Toys & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
@@ -129,28 +129,28 @@ let productsData = [
     {
         "Product Name": "Breakfast Cereal",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/ks6ef0w0/cereal-flake/q/w/h/1-oats-veggies-masala-oats-pouch-yogabar-original-imag5suhzvwy3xh4.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "3456",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Tea Powder",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kkimfm80/tea/z/n/1/premium-pouch-regular-tea-powder-tata-original-imafzuf2mnubzphd.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "3000",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     },
     {
         "Product Name": "Learning & Educational Games",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/krgohow0/learning-toy/1/a/h/mapology-ultimate-indian-combo-india-with-capitals-map-puzzle-original-imag59f2vyh63v9x.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "4000",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Up to 80% Off"
     },
     {
         "Product Name": "Honey",
         "Product Image": "https://rukminim2.flixcart.com/image/120/120/kcjexe80/honey/w/y/4/1-honey-saffola-original-imaftn9ppz2shxzg.jpeg?q=90",
-        "Product Price (INR)": "",
+        "Product Price (INR)": "1500",
         "Product Category": "Sports, Healthcare & more",
         "Product Offer/Discount": "Upto 75% Off"
     }
@@ -757,4 +757,5 @@ function getPastedFashionData() {
         }
     } catch (_) {}
     return null;
+
 }
